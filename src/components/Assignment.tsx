@@ -27,7 +27,7 @@ const AssignmentCode = () => {
           <img
             className="mx-auto p-5 h-100 w-54"
             src="/flowchart.png"
-            alt="dashboard image"
+            alt="flowchart for the solution"
           />
 
           <div className="mx-auto">
@@ -233,17 +233,17 @@ const AssignmentCode = () => {
 
           <div className="my-5">
             <p className="font-dark text-gray-900 md:text-lg dark:text-gray-400">
-              ORG 0; //ROM locations starts from 0000H
+              ORG 0;
               <br />
-              MOV DPTR, #300H; //DPTR is a pointer starting from 300H
+              MOV DPTR, #300H;
               <br />
-              MOV A, #0FFH; //Make P1 as an INPUT
+              MOV A, #0FFH;
               <br />
               MOV P1, A;
               <br />
-              Back: MOV A, P1; //get x from P1
+              Back: MOV A, P1;
               <br />
-              MOVC A, @A+DPTR; //get x2
+              MOVC A, @A+DPTR;
               <br />
               MOV P2, A<br />
               SJMP Back
@@ -266,26 +266,26 @@ const AssignmentCode = () => {
 
           <div className="my-5">
             <p className="font-dark text-gray-900 md:text-lg dark:text-gray-400">
-              MOV A,#38H // Use 2 lines and 5x7 matrix
+              MOV A,#38H
               <br />
               ACALL CMND
               <br />
-              MOV A,#0FH // LCD ON, cursor ON, cursor blinking ON
+              MOV A,#0FH
               <br />
               ACALL CMND
               <br />
-              MOV A,#01H //Clear screen
+              MOV A,#01H
               <br />
               ACALL CMND
               <br />
-              MOV A,#06H //Increment cursor
+              MOV A,#06H
               <br />
               ACALL CMND
               <br />
-              MOV A,#82H //Cursor line one , position 2<br />
+              MOV A,#82H <br />
               ACALL CMND
               <br />
-              MOV A,#3CH //Activate second line
+              MOV A,#3CH
               <br />
               ACALL CMND
               <br />
@@ -321,7 +321,8 @@ const AssignmentCode = () => {
               <br />
               ACALL DISP
               <br />
-              MOV A,#0C1H //Jump to second line, position 1<br />
+              MOV A,#0C1H
+              <br />
               ACALL CMND
               <br />
               MOV A,#67D
