@@ -1,10 +1,10 @@
-const Component1 = () => {
+const AssignmentCode = () => {
   return (
     <div>
       <section className="bg-white dark:bg-gray-900">
         <div className="mx-auto text-center">
           <h1 className="m-5 mb-4 text-4xl font-extrabold text-gray-900 md:text-5xl lg:text-5xl dark:text-white">
-            Microproccesor,Microcontroller,Interfacing techniques
+            Microproccesor, Microcontroller, Interfacing techniques
           </h1>
         </div>
 
@@ -156,8 +156,8 @@ const Component1 = () => {
         <div className="mx-auto items-center p-5 w-full">
           <div className="my-5">
             <p className="font-dark text-gray-900 md:text-lg dark:text-gray-400">
-              1. Write an ALP to copy the value 12H into RAM memory
-              location 50H to 5FH using <br />
+              1. Write an ALP to copy the value 12H into RAM memory location 50H
+              to 5FH using <br />
               a) Direct addressing mode
               <br />
               b) Register indirect addressing mode without a loop, and
@@ -436,4 +436,4 @@ const Component1 = () => {
   );
 };
 
-export default Component1;
+export default AssignmentCode;

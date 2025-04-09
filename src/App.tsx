@@ -1,11 +1,11 @@
-import Component1 from "./components/1";
+import AssignmentCode from "./components/Assignment";
 import Header from "./components/Header";
 
 function App() {
   return (
     <div>
       <Header />
-      <Component1 />
+      <AssignmentCode />
     </div>
   );
 }
