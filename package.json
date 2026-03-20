@@ -7,9 +7,9 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "format": "pnpm biome format --write .",
-    "lint": "pnpm biome lint --write .",
-    "validate": "pnpm lint && pnpm format",
+    "format": "biome format --write .",
+    "lint": "biome lint --write .",
+    "validate": "bun run lint && bun run format",
     "prepare": "husky"
   },
   "dependencies": {
